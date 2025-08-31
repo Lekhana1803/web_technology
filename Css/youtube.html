@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Videos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+
+    .navbar {
+      background-color: white;
+    }
+
+    .sidebar {
+      background-color: white;
+      height: 100vh;
+   
+    }
+
+    .sidebar a {
+      display: block;
+      color: #333;
+      text-decoration:navajowhite;
+    }
+
+    .sidebar a:hover {
+      background-color: #e6e6e6;
+      border-radius: 5px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    .video-title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .video-desc {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" class="logo" alt="YouTube" />
+      </a>
+      <form class="d-flex mx-auto w-50">
+        <input class="form-control me-2" type="search" placeholder="Search videos..." />
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container-fluid pt-5 mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-lg-2 sidebar d-none d-lg-block">
+        <h5 class="mt-4 ps-3">Menu</h5>
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Shorts</a>
+        <a href="#">Subscriptions</a>
+        <h5 class="mt-4 ps-3">Library</h5>
+        <a href="#">History</a>
+        <a href="#">Watch Later</a>
+        <a href="#">Liked Videos</a>
+        <h5 class="mt-4 ps-3">More</h5>
+        <a href="#">Trending</a>
+        <a href="#">Live</a>
+        <a href="#">Gaming</a>
+      </div>
+
+      <!-- Videos Grid -->
+      <div class="col-lg-10">
+        <div class="row g-4 px-3">
+
+          <!-- Video Blocks -->
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe><div class="video-title">HTML Crash Course</div><div class="video-desc">Beginner HTML tutorial by Traversy Media.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/J35jug1uHzE" allowfullscreen></iframe><div class="video-title">CSS Basics</div><div class="video-desc">Learn CSS with practical examples.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/1Rs2ND1ryYc" allowfullscreen></iframe><div class="video-title">Responsive Web Design</div><div class="video-desc">Build responsive layouts using CSS media queries.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/Z1Yd7upQsXY" allowfullscreen></iframe><div class="video-title">Python for Beginners</div><div class="video-desc">Complete Python programming course.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe><div class="video-title">YouTube Embed Test</div><div class="video-desc">A sample video for embedding purposes.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/eIrMbAQSU34" allowfullscreen></iframe><div class="video-title">Java Tutorial</div><div class="video-desc">Learn Java from scratch for beginners.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/kUMe1FH4CHE" allowfullscreen></iframe><div class="video-title">HTML Visually Explained</div><div class="video-desc">Visual learning of HTML tags and structure.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/3PHXvlpOkf4" allowfullscreen></iframe><div class="video-title">JavaScript Full Course</div><div class="video-desc">Master JavaScript in this long-form course.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/Q33KBiDriJY" allowfullscreen></iframe><div class="video-title">C Programming</div><div class="video-desc">C Programming tutorial with examples.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/Ke90Tje7VS0" allowfullscreen></iframe><div class="video-title">React JS Crash Course</div><div class="video-desc">Learn React fundamentals in one video.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/f02mOEt11OQ" allowfullscreen></iframe><div class="video-title">Git & GitHub for Beginners</div><div class="video-desc">Git and GitHub explained in simple terms.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/pKd0Rpw7O48" allowfullscreen></iframe><div class="video-title">SQL Full Course</div><div class="video-desc">Learn SQL from basics to advanced queries.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/Oe421EPjeBE" allowfullscreen></iframe><div class="video-title">Node.js Crash Course</div><div class="video-desc">Learn backend development with Node.js.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/yfoY53QXEnI" allowfullscreen></iframe><div class="video-title">CSS Flexbox Tutorial</div><div class="video-desc">Master Flexbox layout in CSS easily.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/SBvmnHTQIPY" allowfullscreen></iframe><div class="video-title">Linux Basics</div><div class="video-desc">Linux terminal and commands overview.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/RBSGKlAvoiM" allowfullscreen></iframe><div class="video-title">Data Structures</div><div class="video-desc">Visual introduction to data structures.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/nLRL_NcnK-4" allowfullscreen></iframe><div class="video-title">Machine Learning Full Course</div><div class="video-desc">Complete course on ML with Python.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/aircAruvnKk" allowfullscreen></iframe><div class="video-title">Neural Networks</div><div class="video-desc">How neural networks work in AI.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/d6WC5n9G_sM" allowfullscreen></iframe><div class="video-title">Kubernetes Basics</div><div class="video-desc">Intro to container orchestration with Kubernetes.</div></div>
+          <div class="col-md-6 col-xl-4"><iframe src="https://www.youtube.com/embed/jBzwzrDvZ18" allowfullscreen></iframe><div class="video-title">Docker Crash Course</div><div class="video-desc">Learn Docker and containerization fast.</div></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
