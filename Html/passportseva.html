@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form>
+   <h1>Passport Seva</h1>
+  <label for="applyAt">Register to apply </label><br>
+  <input type="radio" id="cpvDelhi" name="applyAt" value="CPV Delhi">
+  <label for="cpvDelhi">CPV Delhi</label>
+  <input type="radio" id="passportOffice" name="applyAt" value="Passport Office">
+  <label for="passportOffice">Passport Office</label>
+  <br><br>
+
+
+<label for="passportOfficeSelect">Passport Office*</label><br>
+<select id="passportOfficeSelect" name="passportOffice">
+  <option value="">Select the office</option>
+  <option value="Ahmedabad">Ahmedabad</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="Bhopal">Bhopal</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Coimbatore">Coimbatore</option>
+ </select><br><br>
+
+
+  <label for="givenName">Given Name</label><br>
+  <input type="text" id="givenName" name="givenName"><br><br>
+
+  <label for="surname">Surname</label><br>
+  <input type="text" id="surname" name="surname" ><br><br>
+
+  <label for="dob">Date of Birth (DD/MM/YYYY)*</label><br>
+  <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY"><br><br>
+
+  <label for="email">E-mail Id</label><br>
+  <input type="email" id="email" name="email" ><br><br>
+
+  <label>Do you want your Login Id to be same as E-mail Id?</label><br>
+  <input type="radio" id="loginYes" name="sameLogin" value="Yes">
+  <label for="loginYes">Yes</label>
+  <input type="radio" id="loginNo" name="sameLogin" value="No" >
+  <label for="loginNo">No</label><br><br>
+
+  <label for="loginId">Login Id*</label><br>
+  <input type="text" id="loginId" name="loginId"><br><br>
+
+  <label for="password">Password*</label><br>
+  <input type="password" id="password" name="password"><br><br>
+
+  <label for="confirmPassword">Confirm Password*</label><br>
+  <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+
+
+<label for="questions">Select questions*</label><br>
+<select id="selectQuestions" name="Questions">
+  <option value="">Select the question</option>
+  <option value="petname">Petname</option>
+  <option value="birthplace">Birthplace</option>
+  <option value="fav color">fav color</option>
+  <option value="first school">first school</option>
+</select><br><br>
+
+
+<label for="answer">Answer*</label><br>
+<input type="text" id="answer" name="answer"><br><br>
+
+
+<input type="checkbox" id="agree" name="agree">
+<label for="agree">I agree</label><br><br>
+<input type="submit">
+<input type="reset">
+
+
+</form>
+
+
+</body>
+</html>
